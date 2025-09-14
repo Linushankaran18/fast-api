@@ -7,7 +7,7 @@ User=linush
 Group=linush
 WorkingDirectory=/home/linush/app/src/
 Environment="PATH=/home/linush/app/venv/bin"
-ExecStart=/home/fastapi/app/venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
+ExecStart=/home/linush/app/venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
 
 [Install]
 WantedBy=multi-user.target
